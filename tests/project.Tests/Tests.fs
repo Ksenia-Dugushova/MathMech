@@ -1,7 +1,7 @@
 namespace MathMech_lessons.Tests
 
 open Expecto
-open MathMech_lessons
+open MathMech_lessons.Main
 
 module SayTests =
     [<Tests>]
@@ -10,7 +10,6 @@ module SayTests =
             "samples"
             [ testCase "Test for sum"
               <| fun _ ->
-                  let actualResult = sum 10 0
-                  Expect.equal actualResult 55 "Sum from 10 to 0 should be 55"]
+                  let actualResult = f1 2 10
 
-             
+                  Expect.equal actualResult 1024 "The answer isn't correct" ]
