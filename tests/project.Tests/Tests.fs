@@ -1,18 +1,16 @@
-namespace project.Tests
+namespace MathMech_lessons.Tests
 
 open Expecto
-open project
+open MathMech_lessons
 
 module SayTests =
     [<Tests>]
     let tests =
         testList
             "samples"
-            [ testCase "Say nothing"
+            [ testCase "Test for sum"
               <| fun _ ->
-                  let subject = Say.nothing ()
-                  Expect.equal subject () "Not an absolute unit"
-              testCase "Say hello all"
-              <| fun _ ->
-                  let subject = Say.hello "all"
-                  Expect.equal subject "Hello all" "You didn't say hello" ]
+                  let actualResult = sum 10 0
+                  Expect.equal actualResult 55 "Sum from 10 to 0 should be 55"]
+
+             
