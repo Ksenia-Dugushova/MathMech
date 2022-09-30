@@ -82,7 +82,7 @@ module SayTests =
               <| fun _ ->
                   let actualResult = f4 2 14
                   Expect.equal actualResult [| 3; 5; 7; 9; 11; 13 |] "The answer isn't correct"
-              testCase "3 test for array"
+              testCase "4 test for array"
               <| fun _ ->
                   let actualResult = f4 -5 3
                   Expect.equal actualResult [| -3; -1; 1 |] "The answer isn't correct"
